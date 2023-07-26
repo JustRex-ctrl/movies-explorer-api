@@ -24,6 +24,7 @@ app.use(limiter);
 app.use(cors({
   origin: [
     'http://localhost:3000',
+    'https://moviefrontsitevolkov.nomoredomains.xyz',
   ],
   credentials: true,
   maxAge: 30,
