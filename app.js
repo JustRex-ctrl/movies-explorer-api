@@ -24,6 +24,7 @@ app.use(limiter);
 app.use(cors({
   origin: [
     'http://localhost:3001',
+    'http://moviefrontsitevolkov.nomoredomains.xyz',
     'https://moviefrontsitevolkov.nomoredomains.xyz',
   ],
   credentials: true,
