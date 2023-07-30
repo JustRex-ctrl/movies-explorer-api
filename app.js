@@ -28,7 +28,6 @@ app.use(cors({
     'https://moviefrontsitevolkov.nomoredomains.xyz',
   ],
   credentials: true,
-  maxAge: 30,
 }));
 
 app.use(helmet());
