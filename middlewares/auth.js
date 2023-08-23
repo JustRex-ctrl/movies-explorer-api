@@ -9,7 +9,7 @@ module.exports.validateToken = (req, res, next) => {
   try {
     payload = jwt.verify(
       token,
-      'dev-secret',
+      NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
     );
   } catch (err) {
     return next(new NotAuthError('Authorization required'));
